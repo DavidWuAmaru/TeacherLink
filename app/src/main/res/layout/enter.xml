@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="10"
+        android:gravity="center|left"
+        android:text="身分功能\n\n
+        老師：建立課程後，可以收到學生來自該課程所屬的訊息或者請假申請，若課程非該老師所建立則不會所屬的訊息或者請假申請，查看請假申請後可以選擇允許或拒絕，之後學生會收到是否成功申請的通知。\n\n
+
+        學生：在老師建立課程後，可以選擇想要向哪一課程傳送訊息或提出請假申請，請假申請中可以選擇請假類型、說明原因及提供證明文件，若老師允許、拒絕該申請，則會收到通知。"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="點擊以繼續"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

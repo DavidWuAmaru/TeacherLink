@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/enter">
+
+    <fragment
+        android:id="@+id/enter"
+        android:name="com.example.myapplication.Fragment_enter"
+        android:label="enter"
+        tools:layout="@layout/enter" >
+        <action
+            android:id="@+id/action_enter_to_choose_identity"
+            app:destination="@id/choose_identity" />
+    </fragment>
+    <fragment
+        android:id="@+id/choose_identity"
+        android:name="com.example.myapplication.Fragment_choose_identity"
+        android:label="choose_identity"
+        tools:layout="@layout/choose_identity" >
+        <action
+            android:id="@+id/action_choose_identity_to_teacher"
+            app:destination="@id/teacher" />
+        <action
+            android:id="@+id/action_choose_identity_to_stu"
+            app:destination="@id/stu" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacher"
+        android:name="com.example.myapplication.Fragment_teacher"
+        android:label="teacher"
+        tools:layout="@layout/teacher" >
+        <action
+            android:id="@+id/action_teacher_to_leave"
+            app:destination="@id/leave" />
+        <action
+            android:id="@+id/action_teacher_to_message"
+            app:destination="@id/message" />
+        <argument
+            android:name="message_id"
+            app:argType="integer"
+            android:defaultValue='1'/>
+        <action
+            android:id="@+id/action_teacher_to_add_class"
+            app:destination="@id/add_class" />
+    </fragment>
+    <fragment
+        android:id="@+id/stu"
+        android:name="com.example.myapplication.Fragment_stu"
+        android:label="stu"
+        tools:layout="@layout/stu" >
+        <action
+            android:id="@+id/action_stu_to_class_info"
+            app:destination="@id/class_info" />
+        <argument
+            android:name="class_id"
+            app:argType="integer"
+            android:defaultValue='1'/>
+    </fragment>
+    <fragment
+        android:id="@+id/leave"
+        android:name="com.example.myapplication.Fragment_leave"
+        android:label="leave"
+        tools:layout="@layout/leave" >
+        <action
+            android:id="@+id/action_leave_to_attachment"
+            app:destination="@id/attachment" />
+        <argument
+            android:name="img_path"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+    <fragment
+        android:id="@+id/message"
+        android:name="com.example.myapplication.Fragment_message"
+        android:label="message"
+        tools:layout="@layout/message"/>
+    <fragment
+        android:id="@+id/add_class"
+        android:name="com.example.myapplication.Fragment_add_class"
+        android:label="add_class"
+        tools:layout="@layout/add_class"/>
+    <fragment
+        android:id="@+id/class_info"
+        android:name="com.example.myapplication.Fragment_class_info"
+        android:label="send_message"
+        tools:layout="@layout/class_info" >
+        <argument
+            android:name="class_id"
+            app:argType="integer"
+            android:defaultValue='1'/>
+        <action
+            android:id="@+id/action_class_info_to_send_message"
+            app:destination="@id/send_message" />
+        <action
+            android:id="@+id/action_class_info_to_send_leave"
+            app:destination="@id/send_leave" />
+    </fragment>
+    <fragment
+        android:id="@+id/send_message"
+        android:name="com.example.myapplication.Fragment_send_message"
+        android:label="send_message"
+        tools:layout="@layout/send_message" />
+    <fragment
+        android:id="@+id/send_leave"
+        android:name="com.example.myapplication.Fragment_send_leave"
+        android:label="send_leave"
+        tools:layout="@layout/send_leave" >
+        <action
+            android:id="@+id/action_send_leave_to_take_picture"
+            app:destination="@id/take_picture" />
+        <argument
+            android:name="sql"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+    <fragment
+        android:id="@+id/take_picture"
+        android:name="com.example.myapplication.Fragment_take_picture"
+        android:label="take_picture"
+        tools:layout="@layout/take_picture" >
+    </fragment>
+    <fragment
+        android:id="@+id/attachment"
+        android:name="com.example.myapplication.Fragment_attachment"
+        android:label="attachment"
+        tools:layout="@layout/attachment" />
+</navigation>

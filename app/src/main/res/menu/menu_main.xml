@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/change_identity"
+        android:title="切換身分"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/sign_out"
+        android:title="登出"
+        app:showAsAction="ifRoom"/>
+
+</menu>
