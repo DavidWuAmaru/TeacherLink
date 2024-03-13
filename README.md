@@ -1,6 +1,5 @@
 # TeacherLink
 ## Description
-平時如果想要請假或者想傳訊息給老師，必須找到老師的email，且可能因同時收到其他郵件而被忽略，因此計畫開發一個方便師生間溝通的應用程式，讓請假、傳訊息等事情更加輕鬆。
-寫一個能夠讓師生更容易通訊的app。
+在現代教育環境中，師生之間的溝通是學習過程中至關重要的一環。然而，傳統的溝通方式，如電子郵件或面對面交流，可能存在一些不便之處，例如找到老師的email、時間上的不方便等等。為了解決這些問題，我們計劃開發一個全新的應用程式，名為「TeacherLink」，旨在促進師生之間的溝通，使請假、傳訊息等事情更加輕鬆便捷。
 ## Demo
 [TeacherLink.pdf](https://github.com/DavidWuAmaru/TeacherLink/blob/main/TeacherLink.pdf)
